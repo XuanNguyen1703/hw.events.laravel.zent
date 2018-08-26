@@ -37,7 +37,7 @@
 							<form action="{{asset('')}}events/{{$event->id}}" method="post" >
 								<input type="hidden" name="_token" value="{{csrf_token()}}">
 								<input type="hidden" name="_method" value="delete">
-								<button type="submit" class="btn btn-info btn-sm">Delete</button>
+								<button type="submit" class="btn btn-info btn-sm" onclick="return confirm('Bạn muốn xóa không ?');">Delete</button>
 							</form>
 						</td>
 					</tr>

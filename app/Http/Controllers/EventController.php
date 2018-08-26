@@ -19,7 +19,9 @@ class EventController extends Controller
     	return view('events.create');
     }
     public function store(Request $request){
-    	Event::create($request->all());
+    	$data=$request->all();
+    	Event::create($data);
+    	// dd($request);
     	return redirect('events');
     }
      public function edit($id)

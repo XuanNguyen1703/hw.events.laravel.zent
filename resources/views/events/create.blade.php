@@ -15,19 +15,20 @@
 					{{csrf_field()}}
 					<div class="form-group">
 						<label>Title</label>
-						<input type="text" class="form-control" name="title">
+						<input type="text" class="form-control" name="title" placeholder="title">
 					</div>
 					<div class="form-group">
 						<label>Content</label>
-						<input type="text" class="form-control" name="content">
+						<input type="text" class="form-control" name="content" placeholder="content">
 					</div>
 					<div>
 						<label>Time</label>
-						<input id="datepicker" name="time">					
+						<input id="datepicker" name="time" placeholder="time">					
 					</div>
+					<br>
 					<div class="form-group">
 						<label>Location</label>
-						<input type="text" class="form-control" name="location">
+						<input type="text" class="form-control" name="location" placeholder="location">
 					</div>
 					<button class="btn btn-primary" type="submit">Add</button>
 				</form>
